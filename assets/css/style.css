@@ -1,3 +1,40 @@
-main{ 
-    background-color: beige;
+.container { 
+    background-color: #F0F0F0;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-section {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .news-section {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 20%;
+} */
+
+header nav ul{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
