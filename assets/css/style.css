@@ -1,6 +1,43 @@
 .container { 
     background-color: #F0F0F0;
 }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white(241, 241, 210);
+}
+
+body {
+    background-image: url('../img/Mondstadt.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#logo img{
+    width: 80px;
+    height: 80px;
+}
+
 main{
     width: 100%;
     display: flex;
@@ -10,21 +47,51 @@ main{
     
 }
 
-.main-section {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
+main article {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 10px;
 }
 
-/* .news-section {
+.main-section {
+    max-width: 70%;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(241, 241, 210);
+    border-radius: 10px;
+}
+
+.products-section {
+    display: flex;
     justify-content: center;
-    width: 20%;
-} */
+    max-width: 20%;
+    background-color: rgb(241, 241, 210);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.products article {
+    /* width: 100%; */
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 header{
     /* background: red; */
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,6 +110,12 @@ header nav ul{
     gap: 40px;
     list-style: none;
     text-decoration: none;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* header nav ul{
@@ -67,6 +140,13 @@ header nav ul {
     justify-content: space-between;
     align-items: space-between;
     align-content: space-between;
-    
     gap: 20px;
+}
+
+.posts article{
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
