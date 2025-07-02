@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/9cf0379044.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="inicio-header">
         <nav>
             <ul>
                 <li id="logo"><img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="logo"></li>
@@ -30,42 +30,44 @@
                 <section>
                     <h2>Todos los posts</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque error a accusamus sit quae nisi unde optio obcaecati debitis accusantium. Exercitationem tenetur quod omnis ducimus! Unde accusamus minus et. Enim!</p>
-                    <input type="text" placeholder="Buscar posts...">
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Buscar
-                    </button>
-                    <button>
-                        Todos los posts
-                    </button>
-                    <button>
-                        Etiqueta 1
-                    </button>
-                    <button>
-                        Etiqueta 2
-                    </button>
                 </section>
                 <section>
                     <h2>Posts destacados</h2>
+                    <div class="posts-featured">
+                        <article>
+                            <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen destacada">
+                            <h3>Post destacado 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                            <button class="button-posts">Leer más</button>
+                        </article>
+                        <article>
+                            <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen destacada">
+                            <h3>Post destacado 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                            <button class="button-posts">Leer más</button>
+                    </div>
                     <div class="posts">
                         <article>
-                            <img src="" alt="Imagen del post">
+                            <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen del post">
                             <h3>Post 1</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                            <button>Leer más</button>
+                            <button class="button-posts">Leer más</button>
                         </article>
                         <article>
-                            <img src="" alt="Imagen del post">
+                            <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen del post">
                             <h3>Post 2</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                            <button>Leer más</button>
+                            <button class="button-posts">Leer más</button>
                         </article>
                         <article>
-                            <img src="" alt="Imagen del post">
+                            <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen del post">
                             <h3>Post 3</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                            <button>Leer más</button>
+                            <button class="button-posts">Leer más</button>
                         </article>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <a class="button-filter" href="posts.html">Ver todos los posts</a>
                     </div>
                 </section>
         </article>
@@ -75,26 +77,36 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                 <div class="products">
                     <article>
-                        <img src="" alt="Imagen del producto">
+                        <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen del producto">
                         <h3>Producto 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                        <button>Ver más</button>
+                        <button class="button-posts">Ver más</button>
                     </article>
                     <article>
-                        <img src="" alt="Imagen del producto">
+                        <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen del producto">
                         <h3>Producto 2</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                        <button>Ver más</button>
+                        <button class="button-posts">Ver más</button>
                     </article>
                     <article>
-                        <img src="" alt="Imagen del producto">
+                        <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen del producto">
                         <h3>Producto 3</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                        <button>Ver más</button>
+                        <button class="button-posts">Ver más</button>
                     </article>
                 </div>
             </section>
         </article>
     </main>
+    <footer>
+        <p>&copy; 2025 Genshin Zone. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul class="social-media">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>

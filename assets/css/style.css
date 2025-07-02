@@ -1,7 +1,3 @@
-.container { 
-    background-color: #F0F0F0;
-}
-
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,6 +34,34 @@ body {
     height: 80px;
 }
 
+footer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(241, 241, 210);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer ul li {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 40px;
+    list-style: none;
+}
+
 main{
     width: 100%;
     display: flex;
@@ -64,6 +88,10 @@ main article {
     border-radius: 10px;
 }
 
+.posts-products {
+    min-width: 90%;
+}
+
 .products-section {
     display: flex;
     justify-content: center;
@@ -80,6 +108,12 @@ main article {
     
 }
 
+.products article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .products article {
     /* width: 100%; */
     padding: 20px;
@@ -89,7 +123,30 @@ main article {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header{
+.products-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}
+.products-page article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.products-page article {
+    width: 100%;
+    padding: 20px;
+    /* margin-right: 20px; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inicio-header {
     /* background: red; */
     width: 70%;
     display: flex;
@@ -97,6 +154,16 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+.posts-header {
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
 }
 
 header nav ul{
@@ -116,6 +183,11 @@ header nav ul li a {
     color: #000;
     text-decoration: none;
     font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #bdb76b;
+    transition: all 0.2s ease-in-out;
 }
 
 /* header nav ul{
@@ -149,4 +221,99 @@ header nav ul {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.posts article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.posts-featured {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.posts-featured article {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-posts {
+    padding: 12px 28px;
+    background-color: rgb(241, 241, 210);
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.button-posts:hover,
+.button-posts:focus {
+    background-color: rgb(238, 238, 147);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+    outline: none;
+}
+
+.button-posts:active {
+    background-color: rgb(240, 240, 93);
+}
+
+.button-filter {
+    padding: 10px 28px;
+    background-color: rgb(241, 241, 210);
+    color: #222;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    text-decoration-line: none;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    background-color: rgb(238, 238, 147);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+    outline: none;
+}
+
+.button-filter:active {
+    background-color: rgb(240, 240, 93);
+}
+
+input[type="text"], input[type="search"], input[type="email"], input[type="password"] {
+    width: 85%;
+    padding: 10px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #bdb76b;
+    box-shadow: 0 0 0 2px rgba(189,183,107,0.15);
+    outline: none;
 }
