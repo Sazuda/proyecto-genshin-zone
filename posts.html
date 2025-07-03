@@ -6,6 +6,10 @@
     <title>Posts | Genshin Zone</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/9cf0379044.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/paimon_crown_neon-removebg-preview.png" type="image/png">
+    <meta name="description" content="Detalles del Producto 1 de Genshin Impact. Descubre las características, precio y cómo agregarlo a tu carrito de compras.">
+    <meta name="keywords" content="Genshin Impact, Producto 1, Detalles del producto, comprar Genshin Impact, tienda Genshin Zone">
+    <meta name="author" content="Genshin Zone">
 </head>
 <body>
     <header class="posts-header">
@@ -30,8 +34,9 @@
             <section>
                 <h2>Todos los posts</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque error a accusamus sit quae nisi unde optio obcaecati debitis accusantium. Exercitationem tenetur quod omnis ducimus! Unde accusamus minus et. Enim!</p>
-                <input type="text" placeholder="Buscar posts...">
-                <button class="button-filter">
+                <input type="text" placeholder="Buscar posts..." id="buscador">
+                <ul id="lista-posts"></ul>
+                <button class="button-filter" type="submit" id="buscar-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     Buscar
                 </button>
@@ -45,21 +50,21 @@
                 <div class="posts">
                     <article>
                         <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen destacada">
-                        <h3>Post destacado 1</h3>
+                        <h3 class="post-title">Post destacado 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                         <a class="button-posts" href="post1.html">Leer más</a>
                     </article>
 
                     <article>
                         <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen destacada">
-                        <h3>Post destacado 2</h3>
+                        <h3 class="post-title">Post destacado 2</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                         <a class="button-posts" href="">Leer más</a>
                     </article>
 
                     <article>
                         <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Imagen destacada">
-                        <h3>Post destacado 3</h3>
+                        <h3 class="post-title">Post destacado 3</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                         <a class="button-posts" href="">Leer más</a>
                     </article>
@@ -79,4 +84,6 @@
         </ul>
     </footer>
 </body>
+
+<script src="assets/JS/busqueda.js"></script>
 </html>

@@ -229,6 +229,33 @@ header nav ul {
     border-radius: 10px;
 }
 
+.posts article h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.posts article p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.posts article a {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: rgb(241, 241, 210);
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    text-decoration-line: none;
+}
+
 .posts-featured {
     display: flex;
     flex-direction: row;
@@ -244,6 +271,39 @@ header nav ul {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.posts-featured article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.posts-featured article h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.posts-featured article p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.posts-featured article a {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: rgb(241, 241, 210);
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    text-decoration-line: none;
 }
 
 .button-posts {
@@ -539,6 +599,15 @@ input[type="password"]:focus {
 }
 .button-producto:active {
     background-color: rgb(240, 240, 93);
+}
+
+.seleccionable {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(241, 241, 210);
+    border-radius: 10px;
 }
 
 /* Cart Styles */
