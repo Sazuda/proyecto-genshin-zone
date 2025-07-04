@@ -62,6 +62,13 @@ footer ul {
     list-style: none;
 }
 
+footer ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 main{
     width: 100%;
     display: flex;
@@ -132,13 +139,14 @@ main article {
     /* padding: 20px; */
 }
 .products-page article img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 65%;
     border-radius: 10px;
 }
 
 .products-page article {
     width: 100%;
+    height: 550px;
     padding: 20px;
     /* margin-right: 20px; */
     background-color: #fff;
@@ -183,6 +191,7 @@ header nav ul li a {
     color: #000;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 header nav ul li a:hover {
@@ -209,7 +218,7 @@ header nav ul {
 .posts {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: space-between;
     align-content: space-between;
     gap: 20px;
@@ -556,7 +565,7 @@ input[type="password"]:focus {
 
 .producto-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 

@@ -32,9 +32,10 @@
 
             <section>
                 <h2>Todos los productos</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque error a accusamus sit quae nisi unde optio obcaecati debitis accusantium. Exercitationem tenetur quod omnis ducimus! Unde accusamus minus et. Enim!</p>
-                <input type="text" placeholder="Buscar productos...">
-                <button class="button-filter">
+                <p>Toda la mercancia y productos sobre Genshin Impact en un solo lugar</p>
+                <input type="text" placeholder="Buscar productos..." id="buscador">
+                <ul id="lista-posts"></ul>
+                <button class="button-filter" type="submit" id="buscar-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     Buscar
                 </button>
@@ -44,17 +45,17 @@
                 <h2>Productos destacados</h2>
                 <div class="products-page">
                     <article>
-                        <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Producto destacado 1">
-                        <h3>Producto destacado 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                        <img src="assets/img/bendicion-lunar.webp" alt="Producto destacado 1">
+                        <h3 class="post-title">Bendición Lunar</h3>
+                        <p>La Bendición Lunar es una suscripción de 30 días que cuesta $4.99. Al comprar la bendición, obtendrás inmediatamente  Cristal génesis ×300 y durante 30 días continuarás recibiendo  Protogema ×90 cada día que inicies sesión.</p>
                         <a class="button-posts" href="producto1.html">Ver producto</a>
                         <button class="button-posts"><i class="fa-solid fa-cart-shopping fa-2xl"></i></button>
                     </article>
 
                     <article>
-                        <img src="assets/img/paimon_crown_neon-removebg-preview.png" alt="Producto destacado 2">
-                        <h3>Producto destacado 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                        <img src="assets/img/pase-batalla.jpg" alt="Producto destacado 2">
+                        <h3 class="post-title">Pase de batalla</h3>
+                        <p>Genshin Impact Pase de Batalla Gnostico es un paquete de artículos in-game que incluye 50 niveles para desbloquear en el juego y obtener recompensas.</p>
                         <a class="button-posts" href="">Ver producto</a>
                         <button class="button-posts"><i class="fa-solid fa-cart-shopping fa-2xl"></i></button>
                     </article>
@@ -75,4 +76,7 @@
         </ul>
     </footer>
 </body>
+
+<script src="assets/JS/busqueda.js"></script>
+
 </html>
